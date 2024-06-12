@@ -12,12 +12,10 @@ h2 {
 
 p {
   color: red;
-<<<<<<< HEAD
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   border: 2px solid powderblue;
   /* La propiedad margin CSS define un margen (espacio) fuera del borde. */
   margin: 50px;
-=======
 }
 
 table,
@@ -28,5 +26,4 @@ td {
   background-color: #96D4D4;
   /* Para evitar tener bordes dobles agregar collapse */
   border-collapse: collapse;
->>>>>>> b248afd048829d9e3bd0351b5dc0b990a01edbd6
 }
