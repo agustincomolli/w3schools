@@ -1,9 +1,19 @@
 body {
   background-color: powderblue;
 }
+
 h2 {
   color: blue;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 300%;
+  /* La propiedad padding CSS define un relleno (espacio) entre el texto y el borde. */
+  padding: 20px;
 }
+
 p {
   color: red;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: 2px solid powderblue;
+  /* La propiedad margin CSS define un margen (espacio) fuera del borde. */
+  margin: 50px;
 }
