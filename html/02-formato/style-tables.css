@@ -1,0 +1,41 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: antiquewhite;
+}
+
+h2 {
+  color: red;
+}
+
+h3 {
+  color: green;
+}
+
+h4 {
+  color:blue;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  /* El relleno de celda es el espacio entre los bordes de la celda y el contenido de la celda. */
+  padding: 4px;
+}
+
+h4 {
+  margin-block-end: .25em;
+}
+
+.table-1 {
+  width: 100%;
+}
+
+.table-2 {
+  width: 70%;
+}
+
+.table-3 {
+  height: 100px;
+}
