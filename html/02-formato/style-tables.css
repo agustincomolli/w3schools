@@ -39,3 +39,23 @@ h4 {
 .table-3 {
   height: 100px;
 }
+
+.zebra tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+.calendar,
+.calendar th,
+.calendar td {
+  border:0;
+  min-width: 60px;
+  height: 20px;
+}
+.calendar tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+.calendar th:nth-child(even),
+.calendar td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
