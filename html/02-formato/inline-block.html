@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>En línea y en Bloque</title>
+  <style>
+    div {
+      font-family: system-ui;
+      padding: 2px 16px;
+    }
+
+    .container {
+      /* Muestra los elementos internos uno al lado del otro. */
+      display: flex;
+      /* Centra los elementos horizontalmente. */
+      justify-content: center;
+    }
+
+    .london {
+      background-color: gold;
+    }
+
+    .oslo {
+      background-color: lightcoral;
+    }
+
+    .rome {
+      background-color: cornflowerblue;
+    }
+  </style>
+</head>
+<body>
+  <h1>En línea y en Bloque</h1>
+  <h2>Elementos en bloque</h2>
+  <p>
+    Un elemento a nivel de bloque siempre comienza en una nueva línea y los navegadores agregan automáticamente algo de
+    espacio (un margen) antes y después del elemento.
+  </p>
+  <p>
+    Un elemento a nivel de bloque siempre ocupa todo el ancho disponible (se extiende hacia la izquierda y hacia la
+    derecha tanto como puede).
+  </p>
+
+  <h2>Elementos en línea</h2>
+  <p>
+    Un elemento en línea no comienza en una nueva línea.
+  </p>
+  <p>
+    Un elemento en línea solo ocupa el ancho necesario.
+  </p>
+
+  <h2>Elemento div</h2>
+  <p>El elemento div se utiliza como contenedor</p>
+  <div class="container">
+    <div class="london">
+      <h3>Londres</h3>
+      <p>
+        Londres es la capital de Inglaterra.
+      </p>
+      <p>
+        Londres tiene más de 13 millones de habitantes.
+      </p>
+    </div>
+    <div class="oslo">
+      <h3>Oslo</h3>
+      <p>
+        Oslo es la capital de Noruega.
+      </p>
+      <p>
+        Oslo tiene más de 600.000 habitantes.
+      </p>
+    </div>
+    <div class="rome">
+      <h3>Roma</h3>
+      <p>
+        Roma es la ciudad capital de Italia.
+      </p>
+      <p>
+        Roma tiene casi 3 millones de habitantes.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
