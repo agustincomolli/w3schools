@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseño HTML</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      box-sizing: border-box;
+      margin: 0;
+      /* Generar un diseño de una columna */
+      display: flex;
+      flex-direction: column;
+      /* Alto mínimo del 100% del viewport */
+      min-height: 100dvh;
+    }
+
+    header,
+    footer {
+      background-color: grey;
+      color: white;
+      padding: 4px 20px;
+      text-align: center;
+    }
+
+    main {
+      background-color: lightgrey;
+      /* Ocupar todo lo que sobre de pantalla */
+      flex: 1;
+      /* Generar un diseño en fila del contenido de main. */
+      display: flex;
+    }
+
+    nav {
+      background-color: darkgrey;
+      /* Ocupar un fragmento del ancho de la fila */
+      flex: 1;
+      padding: 10px;
+
+      ul > li {
+        list-style: none;
+        padding-bottom: 8px;
+      }
+
+      ul > li > a {
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      ul > li > a:hover {
+        font-weight: bold;
+      }
+    }
+
+
+    article {
+      /* Ocupar 3 fragmentos del ancho de la fila */
+      flex: 3;
+      padding: 10px 20px;
+    }
+
+    details {
+      margin: 4px 20px;
+    }
+
+    /* Los media querys son para redistribuir los elementos según el tamaño de la pantalla. */
+    @media screen and (max-width: 450px) {
+      main {
+        flex-direction: column;
+      }
+
+      nav {
+        flex: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ciudades</h1>
+  </header>
+  <main>
+    <nav>
+      <ul>
+        <li><a href="./layout.html" title="Ir a la info sobre la ciudad">Londres</a></li>
+        <li><a href="#" title="Ir a la info sobre la ciudad">París</a></li>
+        <li><a href="#" title="Ir a la info sobre la ciudad">Tokio</a></li>
+      </ul>
+    </nav>
+    <article>
+      <h2>Londres</h2>
+      <p>
+        Londres es la capital de Inglaterra. Es la ciudad más poblada del Reino Unido, con un área metropolitana de más
+        de 13 millones de habitantes.
+      </p>
+      <details open>
+        <summary>Detalles</summary>
+        <p>Situada a orillas del río Támesis, Londres ha sido un asentamiento importante durante dos milenios y su
+          historia se remonta a su fundación por los romanos, quienes la llamaron Londinium.
+        </p>
+      </details>
+    </article>
+  </main>
+  <footer>
+    <p>Pie de página&trade;</p>
+  </footer>
+</body>
+</html>
