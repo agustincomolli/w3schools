@@ -16,8 +16,10 @@
       gap: 8px;
 
     }
-    
-    .name>input {
+
+    .name>input,
+    .system-operative>select,
+    .comments>textarea {
       width: 300px;
       padding: 4px;
     }
@@ -27,25 +29,47 @@
     }
 
     .favorite-language>p,
-    .computer>p {
+    .computer>p,
+    .system-operative>p,
+    .comments>p {
       margin-block-end: 4px;
     }
 
     button {
       margin-top: 12px;
-      width: 80px;
+      width: 120px;
       padding: 4px 16px;
     }
   </style>
 </head>
 <body>
   <h1>Formularios</h1>
-  <form action="">
+  <!-- 
+    action: define la acción que se realizará cuando se envíe el formulario.
+    
+    method: especifica el método HTTP que se utilizará al enviar los datos del formulario.
+            ¡Utilice siempre POST si los datos del formulario contienen información personal o confidencial!
+    
+    autocomplete: Cuando la función de autocompletar está activada, el navegador completa automáticamente
+                  los valores en función de los valores que el usuario ha ingresado anteriormente.
+  -->
+  <form action="" method="post" autocomplete="on">
     <div class="name">
+      <!-- 
+        El elemento <label> define una etiqueta para varios elementos del formulario.
+        El atributo for de la etiqueta <label> debe ser igual al atributo id del elemento <input> para unirlos.
+      -->
       <label for="first-name">Nombre:</label>
+      <!-- Elelemento <input> se puede mostrar de varias formas, según el type atributo. -->
+      <!-- 
+        El atributo autofocus de entrada especifica que un campo de entrada debe recibir atención automáticamente 
+        cuando se carga la página.
+      -->
       <input type="text" name="first-name" id="first-name" autofocus>
       <label for="last-name">Apellido:</label>
       <input type="text" name="last-name" id="last-name">
+      <label for="email">Correo electrónico:</label>
+      <input type="email" name="email" id="email" required placeholder="alguien@dominio.com">
     </div>
 
     <div class="favorite-language">
@@ -67,7 +91,26 @@
       <input type="checkbox" name="windows11" id="windows11">
       <label for="windows11">Windows 11</label>
     </div>
-    <button type="submit">Enviar</button>
+
+    <div class="system-operative">
+      <p>Mi Sistema Operativo favorito es:</p>
+      <!-- El elemento <select> define una lista desplegable -->
+      <select name="so" id="so">
+        <!-- <option> define una opción que se puede seleccionar. -->
+        <option value="choose" selected disabled>Elija...</option>
+        <option value="windows">Windows</option>
+        <option value="mac">Mac</option>
+        <option value="linux">Linux</option>
+      </select>
+    </div>
+
+    <div class="comments">
+      <p>Envíame tus comentarios:</p>
+      <textarea name="comments" id="comments" rows="6"></textarea>
+    </div>
+
+    <button type="submit" onclick="alert('¡Formulario enviado!')">Enviar</button>
+    <button type="reset">Restablecer</button>
   </form>
 </body>
 </html>
