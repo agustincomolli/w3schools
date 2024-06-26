@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introducción a CSS</title>
+    <!-- Desde aquí se agrega una hoja de estilos externa -->
+    <link rel="stylesheet" href="./01-intro-css.css" />
+    <!-- Con <style> se agregan estilos internos -->
+    <style>
+      .title-2 {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        color: navy;
+        text-align: center;
+      }
+      .paragraph {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Introducción a CSS</h1>
+    </header>
+    <main>
+      <article>
+        <h2 style="color: brown">Estilos Inline</h2>
+        <!-- A través del atributo style se agregan estilos inline. -->
+        <p
+          style="
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+              'Lucida Sans', Arial, sans-serif;
+          "
+        >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+          sunt provident quibusdam illo voluptatem dignissimos aliquam quaerat
+          voluptatibus ex officiis sit minus quam nostrum laudantium, molestiae
+          consectetur eaque pariatur quidem?
+        </p>
+      </article>
+      <article>
+        <h2 class="title-2">Estilos Internos</h2>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
+          repellat sunt quam deleniti esse non officia, dolores iste eos ratione
+          quaerat id labore voluptates error praesentium laudantium accusantium
+          placeat consequuntur!
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
